@@ -1,48 +1,86 @@
-    html {
-        font-size: 16px;
-    }
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+nav,
+header,
+main,
+aside,
+footer,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #563192;
+    padding: 10px;
+    grid-area: nav;
+}
+
+main {
+    background-color: #ededa0;
+    padding: 10px;
+    grid-area: main;
+}
+
+header {
+    background-color: #e92121;
+    padding: 10px;
+    grid-area: header;
     
+}
+
+aside {
+    background-color: #da6f57;
+    padding: 10px;
+    grid-area: aside;
+}
+
+footer {
+    background-color: #2886d8;
+    padding: 10px;
+    grid-area: footer;
+}
+
+#navigation a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#navigation ul{
+    position: sticky;
+    left: 0px;
+  
+}
+
+#navigation li {
+    display: block;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: yellow;
+    /*width: 10%;*/
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 1000px) {
     body {
-        background-color: rgb(106, 180, 99);
-        height: 100%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+        background-color: darkblue;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-areas: "nav header header header" "nav main main aside" "nav main main aside" "footer footer footer footer";
     }
-    
-    .div1 {
-        grid-area: 2 / 1 / 3 / 3;
-        background-color: magenta;
-    }
-    
-    .div2 {
-        grid-area: 1 / 1 / 2 / 6;
-        background-color: maroon;
-    }
-    
-    .div3 {
-        grid-area: 2 / 3 / 3 / 6;
-        background-color: mediumblue;
-    }
-    
-    .div4 {
-        grid-area: 5 / 1 / 6 / 6;
-        background-color: rgb(32, 93, 60);
-    }
-    
-    .div5 {
-        grid-area: 3 / 1 / 5 / 2;
-        background-color: oldlace;
-    }
-    
-    .div6 {
-        grid-area: 3 / 5 / 5 / 6;
-        background-color: peru;
-    }
-    
-    .div7 {
-        grid-area: 3 / 2 / 5 / 5;
-        background-color: rebeccapurple;
-    }
+}
