@@ -277,7 +277,10 @@ img {
     }
     #hamnav input:checked ~ #hamitems { 
         display: block;
-        transition: ease-in; 
+        
     }
+    #hamburger:hover {
+        transform: rotate(1080deg);
+      }
   
   
