@@ -106,6 +106,7 @@ img {
 
 
 
+
 .Footer {
      grid-area: Footer; 
     background-color: black;
@@ -153,12 +154,20 @@ img {
               "Nav Main Main Aside"
               "Footer Footer Footer Footer";
           }
-         
+          .Burger{
+            display: none;
+        }
+        .Normalnav{
+            position: sticky;
+            top: 0;
+        }
 
 }
 
-@media screen and (max-width:800px) {
-    
+@media screen and (max-width:800px) and (min-width:480px) {
+    .Burger{
+        display: none;
+    }
    
     .Nav{
         position: sticky;
@@ -199,5 +208,76 @@ img {
 }
 
 @media screen and (max-width:480px) {
-   
+   .Nav{
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+    .NavBox{
+    
+        display: inline-block;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/menuicon.png);
+    }
+.Normalnav{
+    display: none;
 }
+
+
+}
+
+/*For Burger menu*/
+#hamnav {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { 
+      display: none; 
+    }
+  
+  /* Horizontal Menu Items */
+  #hamitems { 
+      display: flex; 
+    }
+  #hamitems a {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #401408;
+  }
+  
+
+    /* Show Hamburger Icon */
+    #hamnav label { 
+      display: inline-block; 
+
+    }
+  
+    /* Break down menu items into vertical */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { 
+        display: none; 
+    }
+    #hamnav input:checked ~ #hamitems { 
+        display: block;
+        transition: ease-in; 
+    }
+  
+  
