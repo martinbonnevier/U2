@@ -214,6 +214,7 @@ img {
       .Nav li {
         float: left;
         border-right: 1px solid red;
+        border-bottom: 1px solid red;
         transition: all 3s;
       }
       .Nav li a {
