@@ -200,7 +200,8 @@ img {
         margin: 0%;
       }
     .flex-container div{
-        margin: 0%;
+        margin: 0.5rem 0 0.5rem 0;
+        
     }
     .Nav ul {
         width: 100%;
@@ -241,7 +242,7 @@ img {
         flex-direction: column;
       }
       .flex-container div{
-        margin: 0%;
+        margin: 0.5rem 0 0.5rem 0;
     }
   
     .Nav{
