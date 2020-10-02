@@ -6,7 +6,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #eeeadd;
+    background-color: #fafaf9;
     color: #000000;
     max-width: 800px; /* Sidorna begränsas till 800 pixlar ... */
     margin: 0 auto; /* ... och centreras. Övre/undre marginal är 0 och vänster/höger marginal bestäms lika av webbläsaren. */
@@ -37,13 +37,13 @@ body {
 }
 
 .Nav li a:hover {
-    background-color: #555;
+    background-color: rgb(121, 79, 79);
     color: white;
     
   }
 
 .Nav li a.active {
-    background-color: #4CAF50;
+    background-color: goldenrod;
     color: white;
 }
 
@@ -82,9 +82,8 @@ img {
 }
 .Nav { 
     grid-area: Nav; 
-    background-color: dodgerblue;
-    
- 
+    background-color: black;
+    color: whitesmoke;
 }
 
 .Nav ul {
@@ -94,21 +93,20 @@ img {
 }
 .Main {
      grid-area: Main; 
-    background-color:gold;
+    background-color:hsl(58, 100%, 50%);
 }
 
 .Main h1 {
     text-align: center;
+    font-size: 3rem;
 }
 
 .Aside { 
     grid-area: Aside; 
-    background-color: grey;
+    background-color: black;
+    color: whitesmoke;
     
 }
-
-
-
 
 .Footer {
      grid-area: Footer; 
@@ -139,7 +137,27 @@ img {
       "Aside"
       "Footer";
   }
-
+  .flex-container {
+    display: flex;
+    
+   
+  }
+  
+  .flex-container div {
+    border: black;
+    border-style: dotted;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .flex-container div h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
 
 @media screen and (min-width:800px) {
     /* Layout med grid i tre kolumner */
@@ -176,25 +194,31 @@ img {
         position: sticky;
         top: 0;
     }
-    
-    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+      }
+    .flex-container div{
+        margin: 0%;
+    }
     .Nav ul {
         width: 100%;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgb(184, 184, 184);
+        background-color: whitesmoke;
         
       }
       .Nav li {
         float: left;
-        border-right: 1px solid #bbb;
+        border-right: 1px solid red;
         transition: all 3s;
       }
       .Nav li a {
         display: block;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -203,15 +227,23 @@ img {
         background-color: #111;
       }
       .Nav li a.active {
-        float: right;
-        background-color: #4CAF50;
+        
+        background-color: goldenrod;
         
       }      
       
 }
 
 @media screen and (max-width:480px) {
-   .Nav{
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-container div{
+        margin: 0%;
+    }
+  
+    .Nav{
         position: sticky;
         top: 0;
         display: flex;
