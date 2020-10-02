@@ -49,11 +49,13 @@ body {
 
 .cube {
     background: rgb(133, 226, 11);
-    border-radius: 5% 5%;
+    border-radius: 12% 12%;
     height: 50px;
     width: 50px;
     transition: all 3s;
     width: 100px;
+    text-align: center;
+    font-size: 0.8rem;
   }
 
   .cube:hover {
@@ -74,7 +76,8 @@ img {
 
 .Header {
     grid-area: Header;
-    background-color: darkturquoise;
+    background-color: black;
+    color: whitesmoke;
     text-align: center; 
 }
 .Nav { 
@@ -91,7 +94,7 @@ img {
 }
 .Main {
      grid-area: Main; 
-    background-color: gold;
+    background-color:gold;
 }
 
 .Main h1 {
@@ -230,15 +233,20 @@ img {
 
 }
 
-/*For Burger menu*/
+/*For Burger menu. Some code borrowed from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
 #hamnav {
     width: 100%;
-    text-align: center;
+    text-align: center;    
   }
   
   /* Hide Hamburger */
   #hamnav label, #hamburger { 
       display: none; 
+      transition: transform 1s;      
+    }
+
+    #hamnav :hover{
+        transform: rotate(360deg);
     }
   
   /* Horizontal Menu Items */
@@ -251,16 +259,19 @@ img {
     color: white;
     text-decoration: none;
     text-align: center;
+    
   }
   #hamitems a:hover {
-    background: #401408;
+    background-color: #401408;
+    
   }
-  
 
-    /* Show Hamburger Icon */
+  #hamitems a:active{
+      background-color: red;
+  }
+      /* Show Hamburger Icon */
     #hamnav label { 
       display: inline-block; 
-
     }
   
     /* Break down menu items into vertical */
@@ -274,13 +285,12 @@ img {
     /* Toggle Show/Hide Menu */
     #hamitems { 
         display: none; 
+        
     }
     #hamnav input:checked ~ #hamitems { 
         display: block;
         
     }
-    #hamburger:hover {
-        transform: rotate(1080deg);
-      }
+    
   
   
