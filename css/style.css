@@ -6,12 +6,12 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #fafaf9;
+    background-color: black;
     color: #000000;
-    max-width: 800px; /* Sidorna begränsas till 800 pixlar ... */
-    margin: 0 auto; /* ... och centreras. Övre/undre marginal är 0 och vänster/höger marginal bestäms lika av webbläsaren. */
-    padding: 0 auto; /* Övre/undre marginal är 0, vänster/höger är 8px */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* max-width: 800px; */
+    margin: 0 auto; 
+    padding: 0 auto; 
+    font-family: 'Roboto Mono', monospace;
 }
 
 .Header .Main .Nav .Aside .Footer{
@@ -47,23 +47,6 @@ body {
     color: white;
 }
 
-.cube {
-    background: rgb(133, 226, 11);
-    border-radius: 12% 12%;
-    height: 50px;
-    width: 50px;
-    transition: all 3s;
-    width: 100px;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-
-  .cube:hover {
-    transform: rotate(1080deg);
-  }
-
-
-
 html, body, div {
     margin: 0;
     padding: 0;
@@ -72,7 +55,6 @@ html, body, div {
 img { 
     max-width: 100%;
 }
-
 
 .Header {
     grid-area: Header;
@@ -98,14 +80,14 @@ img {
 
 .Main h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4vw;
+    width: 100%;
 }
 
 .Aside { 
     grid-area: Aside; 
     background-color: black;
-    color: whitesmoke;
-    
+    color: whitesmoke;    
 }
 
 .Footer {
@@ -116,7 +98,7 @@ img {
     background-repeat: no-repeat;
     background-size: auto 75%, 50%;
     background-position: center, center;
-    background-position-x: left, center;
+    background-position-x: 8px, center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
@@ -136,12 +118,24 @@ img {
       "Main"
       "Aside"
       "Footer";
-  }
+}
   .flex-container {
-    display: flex;
-    
-   
-  }
+    display: flex;   
+}
+  .flex-container ul{
+    list-style: none;  
+}
+    .flex-container li{  
+        font-weight: bold;
+}
+    .flex-container li li{
+        font-style: italic;
+        font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
   
   .flex-container div {
     border: black;
@@ -237,6 +231,10 @@ img {
 }
 
 @media screen and (max-width:480px) {
+    html, body, .Main, .Aside, .Header, .Nav, .Normalnav, .Footer, .Burger{
+        width: 100%;
+    }
+    
     .flex-container {
         display: flex;
         flex-direction: column;
@@ -252,14 +250,7 @@ img {
         justify-content: center;
 
     }
-    .NavBox{
-    
-        display: inline-block;
-        cursor: pointer;
-        width: 24px;
-        height: 24px;
-        background-image: url(../img/menuicon.png);
-    }
+
 .Normalnav{
     display: none;
 }
@@ -267,7 +258,7 @@ img {
 
 }
 
-/*For Burger menu. Some code borrowed from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
+/*For Burger menu. */
 #hamnav {
     width: 100%;
     text-align: center;    
@@ -296,13 +287,9 @@ img {
     
   }
   #hamitems a:hover {
-    background-color: #401408;
-    
+    background-color: #401408;    
   }
 
-  #hamitems a:active{
-      background-color: red;
-  }
       /* Show Hamburger Icon */
     #hamnav label { 
       display: inline-block; 
@@ -322,9 +309,7 @@ img {
         
     }
     #hamnav input:checked ~ #hamitems { 
-        display: block;
-        
+        display: block;        
     }
     
-  
   

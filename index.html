@@ -7,6 +7,7 @@
     <title>Sida 1. Uppgift 2. 1ME321 Webbteknik 1</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,22 +22,23 @@
 
                 <h1>Burger</h1>
                 <nav id="hamnav">
-                    <!-- [THE HAMBURGER] -->
-                    <label for="hamburger"><img src="/img/menuicon.png" alt="Hamburger icon"></label>
-                    <input type="checkbox" id="hamburger"/>
-               
-                    <!-- [MENU ITEMS] -->
+
+                    <label for="hamburger"><img src="/img/menuicon_burger.png" alt="Hamburger icon"></label>
+                    <input type="checkbox" id="hamburger" />
+
+
                     <div id="hamitems">
-                      <a class="active" href="/index.html">Sida 1</a>
-                      <a href="/2.html">Sida 2</a>
-                      <a href="/3.html">Sida 3</a>
-                   
+                        <a href="/index.html">Sida 1</a>
+                        <a href="/2.html">Sida 2</a>
+                        <a href="/3.html">Sida 3</a>
+            
+
                     </div>
-                  </nav>
+                </nav>
 
 
             </div>
-            
+
             <div class="Normalnav">
                 <h1>Nav</h1>
                 <ul>
@@ -48,30 +50,42 @@
         </div>
 
         <div class="Main">
-            <h1>D. Boxmodellen</h1>
+            <div><h1>D. Boxmodellen</h1></div>
+            
             <div class="flex-container">
                 <div>
                     <h1>Fråga 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vero nam laborum similique voluptate numquam aspernatur facere repellat fugit quia facilis assumenda perspiciatis illo laudantium, veniam dicta aut, qui sit.</p>
+                    <p>
+                        Boxmodellen används vid design- och layoutarbete med CSS. Alla element i ett HTML-dokument kan anses vara boxar. När man arbetar med boxmodellen tänker man sig att varje HTML-element omges av en box, vilken i sin tur består av följande delar:
+                    </p>   
+                        <ul>
+                            <li>margins <ul><li>Frigör en area runt om ramen (border)</li></ul> </li>
+                            <li>borders <ul><li>En ram eller kantlinje som omger innehåll och padding</li></ul></li>
+                            <li>padding <ul><li>Frigör en area runt om innehållet. Denna area är transparent</li></ul></li>
+                            <li>innehåll<ul><li>Boxens innehåll, exempelvis en text eller en bild</li></ul></li>
+                        </ul>
+                        <p>När man anger width för ett HTML-element är det endast elementets bredd som sätts. För att beräkna den totala bredden på boxen måste också boxens padding, border och margin tas med i beräkningen. </p>
+                       
+                        
                     <img src="/img/boxmodel_temp.jpg" alt="Image depicting explanation of the box model in css">
                 </div>
                 <div>
                     <h1>Fråga 2</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi placeat inventore consequatur voluptatum quae ipsa corrupti ab laborum, quisquam laudantium debitis minus, earum vitae iste. Distinctio esse maiores a.</p>
+                    <p>När man arbetar utifrån boxmodellen och anger värden för width och height ändras endast innehållets värden. För att lättare kunna arbeta med boxen totala bredd och höjd kan man i CSS-filen ange box-sizing: border-box. Detta innebär att width och height tar hänsyn till eventuella margins, paddings och borders, vilka inkluderas i boxens bredd och höjd. För att arbeta med default-värdena för box-sizing anges content-box, varpå vädena för margins, paddings och borders inte räknas med i angiven bredd och höjd.</p>
                 </div>
 
 
             </div>
-            
+
 
         </div>
 
         <div class="Aside">
             <h1>Aside</h1>
-            <div class="cube">Hover over me</div>
+            <!--<div class="cube">Hover over me</div>-->
         </div>
 
-        <div class="Footer"><a href="mailto:ml225ns@student.lnu.se">Kontakta mig</a></div>
+        <div class="Footer"></div>
 
     </div>
 </body>

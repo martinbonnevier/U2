@@ -7,6 +7,7 @@
     <title>Sida 2. Uppgift 2. 1ME321 Webbteknik 1</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,17 +17,19 @@
         
         <div class="Nav">
             <div class="Burger">
-                <h1>Burger</h1>
+                <div><h1>Burger</h1></div>
+                
                 <nav id="hamnav">
-                    <!-- [THE HAMBURGER] -->
-                    <label for="hamburger"><img src="/img/menuicon.png" alt="Hamburger icon"></label>
+                    
+                    <label for="hamburger"><img src="/img/menuicon_burger.png" alt="Hamburger icon"></label>
                     <input type="checkbox" id="hamburger"/>
                
-                    <!-- [MENU ITEMS] -->
+                    
                     <div id="hamitems">
                       <a href="/index.html">Sida 1</a>
-                      <a class="active" href="/2.html">Sida 2</a>
+                      <a href="/2.html">Sida 2</a>
                       <a href="/3.html">Sida 3</a>
+
                    
                     </div>
                   </nav>
@@ -48,17 +51,34 @@
             <div class="flex-container">
                 <div>
                     <h1>Fråga 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vero nam laborum similique voluptate numquam aspernatur facere repellat fugit quia facilis assumenda perspiciatis illo laudantium, veniam dicta aut, qui sit.</p>
-                    <img src="/img/boxmodel_temp.jpg" alt="Image depicting explanation of the box model in css">
+                    <p class="bold">Global navigering</p> <p>ger användaren tillgång till webbsidans samtliga delar. </p>
+                    <p class="bold">Lokal navigering </p><p> ger tillgång till närliggande delar, exempelvis subavsnitt på samma webbsida eller, i en strikt hierarkisk arkitektur, till sidans förälder (parent) eller syskon (siblings).</p>
+                        
+                        Global navigering finns tillgänglig på samtliga sidor på en webbplats, medan lokal navigering endast finns tillgänglig på enstaka sidor där lokal navigering kan anses tillföra fördelar för användarvänligheten.</p>
+                    <img src="/img/applying-information-architecture-to-university-web-sites-53-728.jpg" alt="Image depicting explanation of global and local navigation.">
                 </div>
                 <div>
                     <h1>Fråga 2</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi placeat inventore consequatur voluptatum quae ipsa corrupti ab laborum, quisquam laudantium debitis minus, earum vitae iste. Distinctio esse maiores a.</p>
+                    <p class="bold">Supplementary navigering</p><p> erbjuder genvägar till relaterat innehåll, så att användaren kan få lämpliga länkar till liknande innehåll och som inte med samma enkelhet kan nås via global och lokal navigering.</p>
+                        
+                    <p class="bold"> Courtesy navigering </p><p>ger användaren tillgång till information, som inte behövs eller används i de flesta användningssituationer. Exempel på dylik information eller funktioner kan vara kontaktinformation, information om reklamationsförfarande eller feedbackformulär. Courtecy navigering erbjuder användaren extra funktionalitet när denne behöver den, varför den inte behöver vara integrerad i den globala eller lokala navigeringen.</p>
                 </div>
 
                 <div>
                     <h1>Fråga 3</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi placeat inventore consequatur voluptatum quae ipsa corrupti ab laborum, quisquam laudantium debitis minus, earum vitae iste. Distinctio esse maiores a.</p>
+                    <p>Som exempel på var de fyra, tidigare nämnda, typerna av navigering finns att finna har jag valt elektronikkedjan Netonnets webbsida: </p><a href="https://www.netonnet.se/">https://www.netonnet.se/</a> 
+                    <p>På bilderna nedan har jag angett de fyra navigeringstyperna med en siffra enligt, </p> 
+                    <ul>
+                        <li>1. Global navigering</li>
+                        <li>2. Lokal navigering</li>
+                        <li>3. Supplementary nagigering</li>
+                        <li>4. Courtecy navigering</li>
+                    </ul>
+                    <img src="/img/navigation_images/global.png" alt="Exemple of global navigation.">
+                    <img src="/img/navigation_images/local.png" alt="Exemple of local navigation.">
+                    <img src="/img/navigation_images/supplementary.png" alt="Exemple of supplementary navigation.">
+                    <img src="/img/navigation_images/courtecy.png" alt="Exemple of courtecy navigation.">
+
                 </div>
 
 
@@ -67,7 +87,7 @@
         
         <div class="Aside"><h1>Aside</h1></div>
         
-        <div class="Footer"><h1>Footer</h1><a href="mailto:ml225ns@student.lnu.se">Kontakta mig</a></div>
+        <div class="Footer"><h1>Footer</h1></div>
       
     </div>
 </body>
