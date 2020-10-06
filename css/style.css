@@ -87,18 +87,25 @@ img {
 .Aside { 
     grid-area: Aside; 
     background-color: black;
-    color: whitesmoke;    
+    color: whitesmoke;  
+    background-image: url("/img/bubbles.png");
+    background-size: 50%;
+    
+  
+
 }
+
+
 
 .Footer {
      grid-area: Footer; 
     background-color: black;
     color: cornsilk;
-    background-image: url("/img/avatar.png"), url("/img/sign.png");
+    background-image: url("/img/sign.png");
     background-repeat: no-repeat;
-    background-size: auto 75%, 50%;
-    background-position: center, center;
-    background-position-x: 8px, center;
+    background-size: 50%;
+    background-position: center;
+    background-position-x: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
@@ -175,6 +182,15 @@ img {
         .Normalnav{
             position: sticky;
             top: 0;
+        }
+        .Align div{
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .Aside img{
+            width: 50%;
+            
         }
 
 }
@@ -313,3 +329,16 @@ img {
     }
     
   
+/* Rotate images*/
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
