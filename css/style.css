@@ -8,7 +8,6 @@ html, body {
 body {
     background-color: black;
     
-
     margin: 0; 
     padding: 0; 
     font-family: 'Roboto Mono', monospace;
@@ -82,13 +81,17 @@ html, body, div {
     font-size: 4vw;
     width: 100%;
 }
+.Header h1{
+    text-align: center;
+    
+    font-size: 3em;
+    width: 100%;
+}
 
 .Aside { 
     grid-area: Aside; 
     background-color: black;
-    color: whitesmoke;  
- 
-    
+    color: whitesmoke;     
 }
 
 .Footer {
