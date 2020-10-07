@@ -200,8 +200,11 @@ img{
             grid-area: Aside; 
             background-color: black;
             color: whitesmoke;  
+            
+        }
+        .Aside, .Nav{
             background-image: url("/img/bubbles.png");
-            background-size: 50%;
+            background-size: 90%;
             
         }
 
