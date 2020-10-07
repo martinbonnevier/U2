@@ -7,10 +7,10 @@ html, body {
 }
 body {
     background-color: black;
-    color: #000000;
-   /* max-width: 800px; */
-    margin: 0 auto; 
-    padding: 0 auto; 
+    
+
+    margin: 0; 
+    padding: 0; 
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -52,9 +52,7 @@ html, body, div {
     padding: 0;
     box-sizing: border-box;
 }
-img { 
-    max-width: 100%;
-}
+
 
 .Header {
     grid-area: Header;
@@ -76,6 +74,7 @@ img {
 .Main {
      grid-area: Main; 
     background-color:hsl(58, 100%, 50%);
+    width: 100%;
 }
 
 .Main h1 {
@@ -88,14 +87,9 @@ img {
     grid-area: Aside; 
     background-color: black;
     color: whitesmoke;  
-    background-image: url("/img/bubbles.png");
-    background-size: 50%;
+ 
     
-  
-
 }
-
-
 
 .Footer {
      grid-area: Footer; 
@@ -128,6 +122,7 @@ img {
 }
   .flex-container {
     display: flex;   
+    width: 100%;
 }
   .flex-container ul{
     list-style: none;  
@@ -154,13 +149,20 @@ img {
     margin-left: 1rem;
     font-size: 1.2rem;
     padding: 1rem;
+    
   }
   .flex-container div h1{
     text-align: center;
     font-size: 2.5rem;
 }
+img{
+    max-width: 100%;
+}
+.centerAlign{
+    text-align: center;
+}
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:1200px) {
     /* Layout med grid i tre kolumner */
         body{
             max-width: none;
@@ -183,19 +185,30 @@ img {
             position: sticky;
             top: 0;
         }
-        .Align div{
-            display: inline-block;
-            text-align: center;
-        }
+     
         
-        .Aside img{
-            width: 50%;
+        .flex-container img{
+            max-width: 100%;            
+        }
+        .flex-container a{
+            max-width: 100%;            
+        }
+        .flex-container ul li a img{
+            max-width: 100%;            
+        }
+        .Aside { 
+            grid-area: Aside; 
+            background-color: black;
+            color: whitesmoke;  
+            background-image: url("/img/bubbles.png");
+            background-size: 50%;
             
         }
 
+
 }
 
-@media screen and (max-width:800px) and (min-width:480px) {
+@media screen and (max-width:1200px) and (min-width:480px) {
     .Burger{
         display: none;
     }
@@ -254,9 +267,11 @@ img {
     .flex-container {
         display: flex;
         flex-direction: column;
+        
       }
       .flex-container div{
         margin: 0.5rem 0 0.5rem 0;
+        
     }
   
     .Nav{
